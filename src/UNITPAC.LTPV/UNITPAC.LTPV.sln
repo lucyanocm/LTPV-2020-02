@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UNITPAC.LTPV.Aula03", "UNITPAC.LTPV.Aula03\UNITPAC.LTPV.Aula03.csproj", "{05396134-63C1-4C24-A896-017A78C9BF2F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dominio", "Dominio", "{1930C114-BAB6-4E53-BEAD-49730F99D02A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UNITPAC.LTPV.Dominio", "UNITPAC.LTPV.Dominio\UNITPAC.LTPV.Dominio.csproj", "{BCE4745C-A0CC-4A03-AA56-15547D6DE746}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{05396134-63C1-4C24-A896-017A78C9BF2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05396134-63C1-4C24-A896-017A78C9BF2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05396134-63C1-4C24-A896-017A78C9BF2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCE4745C-A0CC-4A03-AA56-15547D6DE746}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE4745C-A0CC-4A03-AA56-15547D6DE746}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE4745C-A0CC-4A03-AA56-15547D6DE746}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE4745C-A0CC-4A03-AA56-15547D6DE746}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BCE4745C-A0CC-4A03-AA56-15547D6DE746} = {1930C114-BAB6-4E53-BEAD-49730F99D02A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D452B349-0F5D-4649-A98D-8AEB605D5C4E}

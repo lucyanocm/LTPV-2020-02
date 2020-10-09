@@ -107,7 +107,6 @@
             this.editorDeTextoToolStripMenuItem.Name = "editorDeTextoToolStripMenuItem";
             this.editorDeTextoToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.editorDeTextoToolStripMenuItem.Text = "Editor de Texto";
-            this.editorDeTextoToolStripMenuItem.Click += new System.EventHandler(this.editorDeTextoToolStripMenuItem_Click);
             // 
             // FrmPrincipal
             // 

@@ -52,12 +52,6 @@
     <Compile Include="FrmCadastroAluno.Designer.cs">
       <DependentUpon>FrmCadastroAluno.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmEditorTexto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmEditorTexto.Designer.cs">
-      <DependentUpon>FrmEditorTexto.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,9 +62,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmCadastroAluno.resx">
       <DependentUpon>FrmCadastroAluno.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmEditorTexto.resx">
-      <DependentUpon>FrmEditorTexto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>

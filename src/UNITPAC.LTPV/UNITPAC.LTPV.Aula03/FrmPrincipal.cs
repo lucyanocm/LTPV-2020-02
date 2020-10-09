@@ -54,11 +54,5 @@ namespace UNITPAC.LTPV.Aula03
                 frm.Show();
             }
         }
-
-        private void editorDeTextoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmEditorTexto frmeditortexto = new FrmEditorTexto();
-            AbrirFormMdi(frmeditortexto, false);
-        }
     }
 }
