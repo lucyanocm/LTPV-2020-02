@@ -88,6 +88,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <PackageReference Include="SimpleInjector">
+      <Version>5.0.4</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UNITPAC.LTPV.Data\UNITPAC.LTPV.Data.csproj">
+      <Project>{BEDEB2F3-540E-4433-BE0C-89074E536FD5}</Project>
+      <Name>UNITPAC.LTPV.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UNITPAC.LTPV.Dominio\UNITPAC.LTPV.Dominio.csproj">
+      <Project>{bce4745c-a0cc-4a03-aa56-15547d6de746}</Project>
+      <Name>UNITPAC.LTPV.Dominio</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

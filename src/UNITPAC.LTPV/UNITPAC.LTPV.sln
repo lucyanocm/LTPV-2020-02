@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dominio", "Dominio", "{1930
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UNITPAC.LTPV.Dominio", "UNITPAC.LTPV.Dominio\UNITPAC.LTPV.Dominio.csproj", "{BCE4745C-A0CC-4A03-AA56-15547D6DE746}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{91F9866D-25E9-4415-8E5F-E22018C6036B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UNITPAC.LTPV.Data", "UNITPAC.LTPV.Data\UNITPAC.LTPV.Data.csproj", "{BEDEB2F3-540E-4433-BE0C-89074E536FD5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +27,17 @@ Global
 		{BCE4745C-A0CC-4A03-AA56-15547D6DE746}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCE4745C-A0CC-4A03-AA56-15547D6DE746}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCE4745C-A0CC-4A03-AA56-15547D6DE746}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEDEB2F3-540E-4433-BE0C-89074E536FD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEDEB2F3-540E-4433-BE0C-89074E536FD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEDEB2F3-540E-4433-BE0C-89074E536FD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEDEB2F3-540E-4433-BE0C-89074E536FD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BCE4745C-A0CC-4A03-AA56-15547D6DE746} = {1930C114-BAB6-4E53-BEAD-49730F99D02A}
+		{BEDEB2F3-540E-4433-BE0C-89074E536FD5} = {91F9866D-25E9-4415-8E5F-E22018C6036B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D452B349-0F5D-4649-A98D-8AEB605D5C4E}
