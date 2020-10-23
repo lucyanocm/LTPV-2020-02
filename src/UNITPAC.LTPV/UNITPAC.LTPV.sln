@@ -13,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{91F9866D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UNITPAC.LTPV.Data", "UNITPAC.LTPV.Data\UNITPAC.LTPV.Data.csproj", "{BEDEB2F3-540E-4433-BE0C-89074E536FD5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aplicação", "Aplicação", "{7892CBCB-BA2A-46D4-8CA1-416ACF989987}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UNITPAC.LTPV.Aplicacao", "UNITPAC.LTPV.Application\UNITPAC.LTPV.Aplicacao.csproj", "{1958AEBF-D7C9-498A-AA09-4189625C46BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,10 @@ Global
 		{BEDEB2F3-540E-4433-BE0C-89074E536FD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEDEB2F3-540E-4433-BE0C-89074E536FD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEDEB2F3-540E-4433-BE0C-89074E536FD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1958AEBF-D7C9-498A-AA09-4189625C46BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1958AEBF-D7C9-498A-AA09-4189625C46BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1958AEBF-D7C9-498A-AA09-4189625C46BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1958AEBF-D7C9-498A-AA09-4189625C46BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +46,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{BCE4745C-A0CC-4A03-AA56-15547D6DE746} = {1930C114-BAB6-4E53-BEAD-49730F99D02A}
 		{BEDEB2F3-540E-4433-BE0C-89074E536FD5} = {91F9866D-25E9-4415-8E5F-E22018C6036B}
+		{1958AEBF-D7C9-498A-AA09-4189625C46BC} = {7892CBCB-BA2A-46D4-8CA1-416ACF989987}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D452B349-0F5D-4649-A98D-8AEB605D5C4E}

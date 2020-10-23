@@ -31,30 +31,32 @@
             this.PnTopo = new System.Windows.Forms.Panel();
             this.LblTopo = new System.Windows.Forms.Label();
             this.PnInferior = new System.Windows.Forms.Panel();
-            this.PnPrincipal = new System.Windows.Forms.Panel();
-            this.TxtDataNascimento = new System.Windows.Forms.DateTimePicker();
-            this.TxtMatricula = new System.Windows.Forms.TextBox();
-            this.LblMatricula = new System.Windows.Forms.Label();
-            this.TxtSobreNome = new System.Windows.Forms.TextBox();
-            this.LblSobreNome = new System.Windows.Forms.Label();
-            this.TxtNome = new System.Windows.Forms.TextBox();
-            this.LblDataNascimento = new System.Windows.Forms.Label();
-            this.LblNome = new System.Windows.Forms.Label();
-            this.TxtId = new System.Windows.Forms.TextBox();
-            this.LblId = new System.Windows.Forms.Label();
             this.GridAlunos = new System.Windows.Forms.DataGridView();
-            this.LblObservacoes = new System.Windows.Forms.Label();
-            this.TxtObservacoes = new System.Windows.Forms.TextBox();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SobreNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Matricula = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DataNascimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Observacoes = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PnPrincipal = new System.Windows.Forms.Panel();
+            this.TxtMatricula = new System.Windows.Forms.TextBox();
+            this.LblMatricula = new System.Windows.Forms.Label();
+            this.TxtSobreNome = new System.Windows.Forms.TextBox();
+            this.LblSobreNome = new System.Windows.Forms.Label();
+            this.TxtObservacoes = new System.Windows.Forms.TextBox();
+            this.TxtNome = new System.Windows.Forms.TextBox();
+            this.LblObservacoes = new System.Windows.Forms.Label();
+            this.LblDataNascimento = new System.Windows.Forms.Label();
+            this.LblNome = new System.Windows.Forms.Label();
+            this.TxtId = new System.Windows.Forms.TextBox();
+            this.LblId = new System.Windows.Forms.Label();
+            this.BtAdicionar = new System.Windows.Forms.Button();
+            this.TxtDataNascimento = new System.Windows.Forms.MaskedTextBox();
+            this.BtAtualizar = new System.Windows.Forms.Button();
             this.PnTopo.SuspendLayout();
             this.PnInferior.SuspendLayout();
-            this.PnPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridAlunos)).BeginInit();
+            this.PnPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnTopo
@@ -83,123 +85,10 @@
             this.PnInferior.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PnInferior.Controls.Add(this.GridAlunos);
             this.PnInferior.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.PnInferior.Location = new System.Drawing.Point(0, 256);
+            this.PnInferior.Location = new System.Drawing.Point(0, 305);
             this.PnInferior.Name = "PnInferior";
             this.PnInferior.Size = new System.Drawing.Size(778, 132);
             this.PnInferior.TabIndex = 1;
-            // 
-            // PnPrincipal
-            // 
-            this.PnPrincipal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PnPrincipal.Controls.Add(this.TxtDataNascimento);
-            this.PnPrincipal.Controls.Add(this.TxtMatricula);
-            this.PnPrincipal.Controls.Add(this.LblMatricula);
-            this.PnPrincipal.Controls.Add(this.TxtSobreNome);
-            this.PnPrincipal.Controls.Add(this.LblSobreNome);
-            this.PnPrincipal.Controls.Add(this.TxtObservacoes);
-            this.PnPrincipal.Controls.Add(this.TxtNome);
-            this.PnPrincipal.Controls.Add(this.LblObservacoes);
-            this.PnPrincipal.Controls.Add(this.LblDataNascimento);
-            this.PnPrincipal.Controls.Add(this.LblNome);
-            this.PnPrincipal.Controls.Add(this.TxtId);
-            this.PnPrincipal.Controls.Add(this.LblId);
-            this.PnPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PnPrincipal.Location = new System.Drawing.Point(0, 40);
-            this.PnPrincipal.Name = "PnPrincipal";
-            this.PnPrincipal.Size = new System.Drawing.Size(778, 216);
-            this.PnPrincipal.TabIndex = 0;
-            // 
-            // TxtDataNascimento
-            // 
-            this.TxtDataNascimento.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.TxtDataNascimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDataNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.TxtDataNascimento.Location = new System.Drawing.Point(143, 92);
-            this.TxtDataNascimento.Name = "TxtDataNascimento";
-            this.TxtDataNascimento.Size = new System.Drawing.Size(217, 29);
-            this.TxtDataNascimento.TabIndex = 7;
-            // 
-            // TxtMatricula
-            // 
-            this.TxtMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtMatricula.Location = new System.Drawing.Point(490, 92);
-            this.TxtMatricula.Name = "TxtMatricula";
-            this.TxtMatricula.Size = new System.Drawing.Size(270, 29);
-            this.TxtMatricula.TabIndex = 9;
-            // 
-            // LblMatricula
-            // 
-            this.LblMatricula.AutoSize = true;
-            this.LblMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblMatricula.Location = new System.Drawing.Point(397, 97);
-            this.LblMatricula.Name = "LblMatricula";
-            this.LblMatricula.Size = new System.Drawing.Size(90, 24);
-            this.LblMatricula.TabIndex = 8;
-            this.LblMatricula.Text = "Matricula:";
-            // 
-            // TxtSobreNome
-            // 
-            this.TxtSobreNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSobreNome.Location = new System.Drawing.Point(490, 58);
-            this.TxtSobreNome.Name = "TxtSobreNome";
-            this.TxtSobreNome.Size = new System.Drawing.Size(270, 29);
-            this.TxtSobreNome.TabIndex = 5;
-            // 
-            // LblSobreNome
-            // 
-            this.LblSobreNome.AutoSize = true;
-            this.LblSobreNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblSobreNome.Location = new System.Drawing.Point(367, 63);
-            this.LblSobreNome.Name = "LblSobreNome";
-            this.LblSobreNome.Size = new System.Drawing.Size(120, 24);
-            this.LblSobreNome.TabIndex = 4;
-            this.LblSobreNome.Text = "Sobre nome:";
-            // 
-            // TxtNome
-            // 
-            this.TxtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNome.Location = new System.Drawing.Point(74, 58);
-            this.TxtNome.Name = "TxtNome";
-            this.TxtNome.Size = new System.Drawing.Size(286, 29);
-            this.TxtNome.TabIndex = 3;
-            // 
-            // LblDataNascimento
-            // 
-            this.LblDataNascimento.AutoSize = true;
-            this.LblDataNascimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblDataNascimento.Location = new System.Drawing.Point(5, 95);
-            this.LblDataNascimento.Name = "LblDataNascimento";
-            this.LblDataNascimento.Size = new System.Drawing.Size(139, 24);
-            this.LblDataNascimento.TabIndex = 6;
-            this.LblDataNascimento.Text = "Dt. nascimento:";
-            // 
-            // LblNome
-            // 
-            this.LblNome.AutoSize = true;
-            this.LblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNome.Location = new System.Drawing.Point(5, 63);
-            this.LblNome.Name = "LblNome";
-            this.LblNome.Size = new System.Drawing.Size(67, 24);
-            this.LblNome.TabIndex = 2;
-            this.LblNome.Text = "Nome:";
-            // 
-            // TxtId
-            // 
-            this.TxtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtId.Location = new System.Drawing.Point(74, 23);
-            this.TxtId.Name = "TxtId";
-            this.TxtId.Size = new System.Drawing.Size(92, 29);
-            this.TxtId.TabIndex = 1;
-            // 
-            // LblId
-            // 
-            this.LblId.AutoSize = true;
-            this.LblId.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblId.Location = new System.Drawing.Point(42, 28);
-            this.LblId.Name = "LblId";
-            this.LblId.Size = new System.Drawing.Size(30, 24);
-            this.LblId.TabIndex = 0;
-            this.LblId.Text = "Id:";
             // 
             // GridAlunos
             // 
@@ -218,27 +107,10 @@
             this.GridAlunos.Name = "GridAlunos";
             this.GridAlunos.ReadOnly = true;
             this.GridAlunos.RowHeadersWidth = 25;
+            this.GridAlunos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GridAlunos.Size = new System.Drawing.Size(776, 130);
             this.GridAlunos.TabIndex = 0;
-            // 
-            // LblObservacoes
-            // 
-            this.LblObservacoes.AutoSize = true;
-            this.LblObservacoes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblObservacoes.Location = new System.Drawing.Point(5, 134);
-            this.LblObservacoes.Name = "LblObservacoes";
-            this.LblObservacoes.Size = new System.Drawing.Size(127, 24);
-            this.LblObservacoes.TabIndex = 10;
-            this.LblObservacoes.Text = "Observações:";
-            // 
-            // TxtObservacoes
-            // 
-            this.TxtObservacoes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtObservacoes.Location = new System.Drawing.Point(143, 131);
-            this.TxtObservacoes.Multiline = true;
-            this.TxtObservacoes.Name = "TxtObservacoes";
-            this.TxtObservacoes.Size = new System.Drawing.Size(617, 67);
-            this.TxtObservacoes.TabIndex = 11;
+            this.GridAlunos.DoubleClick += new System.EventHandler(this.GridAlunos_DoubleClick);
             // 
             // Id
             // 
@@ -288,12 +160,173 @@
             this.Observacoes.ReadOnly = true;
             this.Observacoes.Width = 250;
             // 
+            // PnPrincipal
+            // 
+            this.PnPrincipal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PnPrincipal.Controls.Add(this.BtAtualizar);
+            this.PnPrincipal.Controls.Add(this.TxtDataNascimento);
+            this.PnPrincipal.Controls.Add(this.BtAdicionar);
+            this.PnPrincipal.Controls.Add(this.TxtMatricula);
+            this.PnPrincipal.Controls.Add(this.LblMatricula);
+            this.PnPrincipal.Controls.Add(this.TxtSobreNome);
+            this.PnPrincipal.Controls.Add(this.LblSobreNome);
+            this.PnPrincipal.Controls.Add(this.TxtObservacoes);
+            this.PnPrincipal.Controls.Add(this.TxtNome);
+            this.PnPrincipal.Controls.Add(this.LblObservacoes);
+            this.PnPrincipal.Controls.Add(this.LblDataNascimento);
+            this.PnPrincipal.Controls.Add(this.LblNome);
+            this.PnPrincipal.Controls.Add(this.TxtId);
+            this.PnPrincipal.Controls.Add(this.LblId);
+            this.PnPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PnPrincipal.Location = new System.Drawing.Point(0, 40);
+            this.PnPrincipal.Name = "PnPrincipal";
+            this.PnPrincipal.Size = new System.Drawing.Size(778, 265);
+            this.PnPrincipal.TabIndex = 0;
+            // 
+            // TxtMatricula
+            // 
+            this.TxtMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMatricula.Location = new System.Drawing.Point(490, 92);
+            this.TxtMatricula.MaxLength = 10;
+            this.TxtMatricula.Name = "TxtMatricula";
+            this.TxtMatricula.Size = new System.Drawing.Size(270, 29);
+            this.TxtMatricula.TabIndex = 9;
+            // 
+            // LblMatricula
+            // 
+            this.LblMatricula.AutoSize = true;
+            this.LblMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblMatricula.Location = new System.Drawing.Point(397, 97);
+            this.LblMatricula.Name = "LblMatricula";
+            this.LblMatricula.Size = new System.Drawing.Size(90, 24);
+            this.LblMatricula.TabIndex = 8;
+            this.LblMatricula.Text = "Matricula:";
+            // 
+            // TxtSobreNome
+            // 
+            this.TxtSobreNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSobreNome.Location = new System.Drawing.Point(490, 58);
+            this.TxtSobreNome.MaxLength = 150;
+            this.TxtSobreNome.Name = "TxtSobreNome";
+            this.TxtSobreNome.Size = new System.Drawing.Size(270, 29);
+            this.TxtSobreNome.TabIndex = 5;
+            // 
+            // LblSobreNome
+            // 
+            this.LblSobreNome.AutoSize = true;
+            this.LblSobreNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSobreNome.Location = new System.Drawing.Point(367, 63);
+            this.LblSobreNome.Name = "LblSobreNome";
+            this.LblSobreNome.Size = new System.Drawing.Size(120, 24);
+            this.LblSobreNome.TabIndex = 4;
+            this.LblSobreNome.Text = "Sobre nome:";
+            // 
+            // TxtObservacoes
+            // 
+            this.TxtObservacoes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtObservacoes.Location = new System.Drawing.Point(143, 131);
+            this.TxtObservacoes.Multiline = true;
+            this.TxtObservacoes.Name = "TxtObservacoes";
+            this.TxtObservacoes.Size = new System.Drawing.Size(617, 67);
+            this.TxtObservacoes.TabIndex = 11;
+            // 
+            // TxtNome
+            // 
+            this.TxtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNome.Location = new System.Drawing.Point(74, 58);
+            this.TxtNome.MaxLength = 150;
+            this.TxtNome.Name = "TxtNome";
+            this.TxtNome.Size = new System.Drawing.Size(286, 29);
+            this.TxtNome.TabIndex = 3;
+            // 
+            // LblObservacoes
+            // 
+            this.LblObservacoes.AutoSize = true;
+            this.LblObservacoes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblObservacoes.Location = new System.Drawing.Point(5, 134);
+            this.LblObservacoes.Name = "LblObservacoes";
+            this.LblObservacoes.Size = new System.Drawing.Size(127, 24);
+            this.LblObservacoes.TabIndex = 10;
+            this.LblObservacoes.Text = "Observações:";
+            // 
+            // LblDataNascimento
+            // 
+            this.LblDataNascimento.AutoSize = true;
+            this.LblDataNascimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDataNascimento.Location = new System.Drawing.Point(5, 95);
+            this.LblDataNascimento.Name = "LblDataNascimento";
+            this.LblDataNascimento.Size = new System.Drawing.Size(139, 24);
+            this.LblDataNascimento.TabIndex = 6;
+            this.LblDataNascimento.Text = "Dt. nascimento:";
+            // 
+            // LblNome
+            // 
+            this.LblNome.AutoSize = true;
+            this.LblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNome.Location = new System.Drawing.Point(5, 63);
+            this.LblNome.Name = "LblNome";
+            this.LblNome.Size = new System.Drawing.Size(67, 24);
+            this.LblNome.TabIndex = 2;
+            this.LblNome.Text = "Nome:";
+            // 
+            // TxtId
+            // 
+            this.TxtId.Enabled = false;
+            this.TxtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtId.Location = new System.Drawing.Point(74, 23);
+            this.TxtId.Name = "TxtId";
+            this.TxtId.Size = new System.Drawing.Size(92, 29);
+            this.TxtId.TabIndex = 1;
+            // 
+            // LblId
+            // 
+            this.LblId.AutoSize = true;
+            this.LblId.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblId.Location = new System.Drawing.Point(42, 28);
+            this.LblId.Name = "LblId";
+            this.LblId.Size = new System.Drawing.Size(30, 24);
+            this.LblId.TabIndex = 0;
+            this.LblId.Text = "Id:";
+            // 
+            // BtAdicionar
+            // 
+            this.BtAdicionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtAdicionar.Location = new System.Drawing.Point(6, 207);
+            this.BtAdicionar.Name = "BtAdicionar";
+            this.BtAdicionar.Size = new System.Drawing.Size(154, 38);
+            this.BtAdicionar.TabIndex = 12;
+            this.BtAdicionar.Text = "Adicionar";
+            this.BtAdicionar.UseVisualStyleBackColor = true;
+            this.BtAdicionar.Click += new System.EventHandler(this.BtAdicionar_Click);
+            // 
+            // TxtDataNascimento
+            // 
+            this.TxtDataNascimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.TxtDataNascimento.Location = new System.Drawing.Point(143, 92);
+            this.TxtDataNascimento.Mask = "00/00/0000";
+            this.TxtDataNascimento.Name = "TxtDataNascimento";
+            this.TxtDataNascimento.Size = new System.Drawing.Size(217, 29);
+            this.TxtDataNascimento.TabIndex = 7;
+            this.TxtDataNascimento.ValidatingType = typeof(System.DateTime);
+            // 
+            // BtAtualizar
+            // 
+            this.BtAtualizar.Enabled = false;
+            this.BtAtualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtAtualizar.Location = new System.Drawing.Point(166, 207);
+            this.BtAtualizar.Name = "BtAtualizar";
+            this.BtAtualizar.Size = new System.Drawing.Size(154, 38);
+            this.BtAtualizar.TabIndex = 13;
+            this.BtAtualizar.Text = "Atualizar";
+            this.BtAtualizar.UseVisualStyleBackColor = true;
+            this.BtAtualizar.Click += new System.EventHandler(this.BtAtualizar_Click);
+            // 
             // FrmCadastroAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(778, 388);
+            this.ClientSize = new System.Drawing.Size(778, 437);
             this.Controls.Add(this.PnPrincipal);
             this.Controls.Add(this.PnInferior);
             this.Controls.Add(this.PnTopo);
@@ -302,9 +335,9 @@
             this.Text = "Cadastro de Alunos";
             this.PnTopo.ResumeLayout(false);
             this.PnInferior.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.GridAlunos)).EndInit();
             this.PnPrincipal.ResumeLayout(false);
             this.PnPrincipal.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GridAlunos)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -321,7 +354,6 @@
         private System.Windows.Forms.Label LblNome;
         private System.Windows.Forms.TextBox TxtId;
         private System.Windows.Forms.Label LblId;
-        private System.Windows.Forms.DateTimePicker TxtDataNascimento;
         private System.Windows.Forms.TextBox TxtMatricula;
         private System.Windows.Forms.Label LblMatricula;
         private System.Windows.Forms.Label LblDataNascimento;
@@ -334,5 +366,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Matricula;
         private System.Windows.Forms.DataGridViewTextBoxColumn DataNascimento;
         private System.Windows.Forms.DataGridViewTextBoxColumn Observacoes;
+        private System.Windows.Forms.Button BtAdicionar;
+        private System.Windows.Forms.MaskedTextBox TxtDataNascimento;
+        private System.Windows.Forms.Button BtAtualizar;
     }
 }

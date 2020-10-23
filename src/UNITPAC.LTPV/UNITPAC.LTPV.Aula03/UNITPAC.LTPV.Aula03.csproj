@@ -94,6 +94,10 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\UNITPAC.LTPV.Application\UNITPAC.LTPV.Aplicacao.csproj">
+      <Project>{1958aebf-d7c9-498a-aa09-4189625c46bc}</Project>
+      <Name>UNITPAC.LTPV.Aplicacao</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UNITPAC.LTPV.Data\UNITPAC.LTPV.Data.csproj">
       <Project>{BEDEB2F3-540E-4433-BE0C-89074E536FD5}</Project>
       <Name>UNITPAC.LTPV.Data</Name>
