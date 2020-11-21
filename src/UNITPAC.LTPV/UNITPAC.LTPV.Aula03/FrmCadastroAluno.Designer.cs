@@ -39,6 +39,9 @@
             this.DataNascimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Observacoes = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PnPrincipal = new System.Windows.Forms.Panel();
+            this.BtAtualizar = new System.Windows.Forms.Button();
+            this.TxtDataNascimento = new System.Windows.Forms.MaskedTextBox();
+            this.BtAdicionar = new System.Windows.Forms.Button();
             this.TxtMatricula = new System.Windows.Forms.TextBox();
             this.LblMatricula = new System.Windows.Forms.Label();
             this.TxtSobreNome = new System.Windows.Forms.TextBox();
@@ -50,9 +53,7 @@
             this.LblNome = new System.Windows.Forms.Label();
             this.TxtId = new System.Windows.Forms.TextBox();
             this.LblId = new System.Windows.Forms.Label();
-            this.BtAdicionar = new System.Windows.Forms.Button();
-            this.TxtDataNascimento = new System.Windows.Forms.MaskedTextBox();
-            this.BtAtualizar = new System.Windows.Forms.Button();
+            this.BtExcluir = new System.Windows.Forms.Button();
             this.PnTopo.SuspendLayout();
             this.PnInferior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridAlunos)).BeginInit();
@@ -163,6 +164,7 @@
             // PnPrincipal
             // 
             this.PnPrincipal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PnPrincipal.Controls.Add(this.BtExcluir);
             this.PnPrincipal.Controls.Add(this.BtAtualizar);
             this.PnPrincipal.Controls.Add(this.TxtDataNascimento);
             this.PnPrincipal.Controls.Add(this.BtAdicionar);
@@ -182,6 +184,39 @@
             this.PnPrincipal.Name = "PnPrincipal";
             this.PnPrincipal.Size = new System.Drawing.Size(778, 265);
             this.PnPrincipal.TabIndex = 0;
+            // 
+            // BtAtualizar
+            // 
+            this.BtAtualizar.Enabled = false;
+            this.BtAtualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtAtualizar.Location = new System.Drawing.Point(166, 207);
+            this.BtAtualizar.Name = "BtAtualizar";
+            this.BtAtualizar.Size = new System.Drawing.Size(154, 38);
+            this.BtAtualizar.TabIndex = 13;
+            this.BtAtualizar.Text = "Atualizar";
+            this.BtAtualizar.UseVisualStyleBackColor = true;
+            this.BtAtualizar.Click += new System.EventHandler(this.BtAtualizar_Click);
+            // 
+            // TxtDataNascimento
+            // 
+            this.TxtDataNascimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.TxtDataNascimento.Location = new System.Drawing.Point(143, 92);
+            this.TxtDataNascimento.Mask = "00/00/0000";
+            this.TxtDataNascimento.Name = "TxtDataNascimento";
+            this.TxtDataNascimento.Size = new System.Drawing.Size(217, 29);
+            this.TxtDataNascimento.TabIndex = 7;
+            this.TxtDataNascimento.ValidatingType = typeof(System.DateTime);
+            // 
+            // BtAdicionar
+            // 
+            this.BtAdicionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtAdicionar.Location = new System.Drawing.Point(6, 207);
+            this.BtAdicionar.Name = "BtAdicionar";
+            this.BtAdicionar.Size = new System.Drawing.Size(154, 38);
+            this.BtAdicionar.TabIndex = 12;
+            this.BtAdicionar.Text = "Adicionar";
+            this.BtAdicionar.UseVisualStyleBackColor = true;
+            this.BtAdicionar.Click += new System.EventHandler(this.BtAdicionar_Click);
             // 
             // TxtMatricula
             // 
@@ -288,38 +323,17 @@
             this.LblId.TabIndex = 0;
             this.LblId.Text = "Id:";
             // 
-            // BtAdicionar
+            // BtExcluir
             // 
-            this.BtAdicionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtAdicionar.Location = new System.Drawing.Point(6, 207);
-            this.BtAdicionar.Name = "BtAdicionar";
-            this.BtAdicionar.Size = new System.Drawing.Size(154, 38);
-            this.BtAdicionar.TabIndex = 12;
-            this.BtAdicionar.Text = "Adicionar";
-            this.BtAdicionar.UseVisualStyleBackColor = true;
-            this.BtAdicionar.Click += new System.EventHandler(this.BtAdicionar_Click);
-            // 
-            // TxtDataNascimento
-            // 
-            this.TxtDataNascimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.TxtDataNascimento.Location = new System.Drawing.Point(143, 92);
-            this.TxtDataNascimento.Mask = "00/00/0000";
-            this.TxtDataNascimento.Name = "TxtDataNascimento";
-            this.TxtDataNascimento.Size = new System.Drawing.Size(217, 29);
-            this.TxtDataNascimento.TabIndex = 7;
-            this.TxtDataNascimento.ValidatingType = typeof(System.DateTime);
-            // 
-            // BtAtualizar
-            // 
-            this.BtAtualizar.Enabled = false;
-            this.BtAtualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtAtualizar.Location = new System.Drawing.Point(166, 207);
-            this.BtAtualizar.Name = "BtAtualizar";
-            this.BtAtualizar.Size = new System.Drawing.Size(154, 38);
-            this.BtAtualizar.TabIndex = 13;
-            this.BtAtualizar.Text = "Atualizar";
-            this.BtAtualizar.UseVisualStyleBackColor = true;
-            this.BtAtualizar.Click += new System.EventHandler(this.BtAtualizar_Click);
+            this.BtExcluir.Enabled = false;
+            this.BtExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.BtExcluir.Location = new System.Drawing.Point(327, 207);
+            this.BtExcluir.Name = "BtExcluir";
+            this.BtExcluir.Size = new System.Drawing.Size(154, 38);
+            this.BtExcluir.TabIndex = 14;
+            this.BtExcluir.Text = "Excluir";
+            this.BtExcluir.UseVisualStyleBackColor = true;
+            this.BtExcluir.Click += new System.EventHandler(this.BtExcluir_Click);
             // 
             // FrmCadastroAluno
             // 
@@ -369,5 +383,6 @@
         private System.Windows.Forms.Button BtAdicionar;
         private System.Windows.Forms.MaskedTextBox TxtDataNascimento;
         private System.Windows.Forms.Button BtAtualizar;
+        private System.Windows.Forms.Button BtExcluir;
     }
 }

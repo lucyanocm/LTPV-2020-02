@@ -6,5 +6,6 @@ namespace UNITPAC.LTPV.Aplicacao.Interfaces
     {
         bool Adicionar(Aluno model);
         bool Atualizar(Aluno model);
+        bool Excluir(Aluno model);
     }
 }

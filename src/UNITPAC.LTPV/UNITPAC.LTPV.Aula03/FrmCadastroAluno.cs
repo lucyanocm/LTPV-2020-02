@@ -22,6 +22,8 @@ namespace UNITPAC.LTPV.Aula03
         private void AtualizarGrid()
         {
             GridAlunos.DataSource = _repository.ObterTodos();
+
+            BtAdicionar.Enabled = true;
         }
 
         private void BtAdicionar_Click(object sender, System.EventArgs e)
@@ -108,6 +110,9 @@ namespace UNITPAC.LTPV.Aula03
             TxtMatricula.Text = string.Empty;
             TxtObservacoes.Text = string.Empty;
 
+            BtAtualizar.Enabled = false;
+            BtExcluir.Enabled = false;
+
             TxtNome.Focus();
         }
 
@@ -133,6 +138,38 @@ namespace UNITPAC.LTPV.Aula03
 
                 BtAdicionar.Enabled = false;
                 BtAtualizar.Enabled = true;
+                BtExcluir.Enabled = true;
+            }
+        }
+
+        private void BtExcluir_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show(this, "Deseja realmente excluir o registro de aluno: " 
+                + TxtId.Text + " - " + TxtNome.Text + " ?", "LTPV",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question,
+                MessageBoxDefaultButton.Button2) == DialogResult.No)
+            {
+                TxtNome.Focus();
+                return;
+            }
+
+            Aluno model = MapearDominio();
+
+            var service = Program.container.GetInstance<IAlunoService>();
+
+            if (service.Excluir(model))
+            {
+                AtualizarGrid();
+
+                MessageBox.Show(this, "Aluno excluído com sucesso.", "LTPV", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                LimparComponentes();
+            }
+            else
+            {
+                TxtNome.Focus();
+
+                MessageBox.Show(this, "Não foi possível excluir o aluno. \n\n" + service.ObterNotificacoes(), "LTPV", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

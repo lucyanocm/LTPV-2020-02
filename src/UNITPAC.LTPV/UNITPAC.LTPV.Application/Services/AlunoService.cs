@@ -50,5 +50,19 @@ namespace UNITPAC.LTPV.Aplicacao.Services
                 return false;
             }
         }
+
+        public bool Excluir(Aluno model)
+        {
+            try
+            {
+                _repository.Excluir(model);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Notificar("Não foi possível atualizar o registro. Motivo: {0}", ex.Message);
+                return false;
+            }
+        }
     }
 }
